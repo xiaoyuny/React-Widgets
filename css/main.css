@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font: inherit;
+  font-size: 100%;
+  color: inherit;
+  text-align: inherit;
+  text-decoration: inherit;
+  vertical-align: baseline;
+  box-sizing: inherit;
+  background: transparent;
+  list-style: none;
+}
+
+/* Clock */
+
+h1 {
+  font-family: 'Kodchasan', sans-serif;
+  font-size: 35px;
+  position: relative;
+  width: 54%;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.clock {
+  border: 2px solid black;
+  border-radius: 5px;
+  height: 120px;
+  width: 580px;
+  background-color: orange;
+  padding: 10px;
+  box-sizing: border-box;
+  font-family: 'Kodchasan', sans-serif;
+  font-size: 35px;
+  margin: auto;
+  color: white;
+}
+
+.clock p {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clock span {
+  display: inline-block;
+
+}
