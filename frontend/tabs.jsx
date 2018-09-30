@@ -14,6 +14,7 @@ class Tabs extends React.Component {
   }
 
   clickTab(event) {
+    event.preventDefault();
     const tabs = ['private', 'family', 'work'];
     switch (event.currentTarget.innerHTML) {
       case 'private':
@@ -34,7 +35,7 @@ class Tabs extends React.Component {
         <h1>Tabs</h1>
         <div className="tabs-container">
           <ul className="tabs-titles">
-            <li onClick={this.clickTab}>private</li>
+            <li onClick={ this.clickTab }>private</li>
             <li onClick={this.clickTab}>family</li>
             <li onClick={this.clickTab}>work</li>
           </ul>
