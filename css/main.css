@@ -3,7 +3,7 @@
   padding: 0;
   border: 0;
   outline: 0;
-  font: inherit;
+  font-family: 'Kodchasan', sans-serif;
   font-size: 100%;
   color: inherit;
   text-align: inherit;
@@ -14,12 +14,15 @@
   list-style: none;
 }
 
+#tabs-and-auto {
+  width: 54%;
+  margin: auto;
+}
+
 /* Clock */
 
 h1 {
-  font-family: 'Kodchasan', sans-serif;
   font-size: 35px;
-  position: relative;
   width: 54%;
   margin: auto;
   margin-bottom: 10px;
@@ -37,6 +40,7 @@ h1 {
   font-size: 35px;
   margin: auto;
   color: white;
+  margin-bottom: 20px;
 }
 
 .clock p {
@@ -44,7 +48,44 @@ h1 {
   justify-content: space-between;
 }
 
-.clock span {
-  display: inline-block;
+/* Tabs */
 
+#tabs-and-auto h1 {
+  width: 1800px;
+}
+
+.tabs-container {
+  width: 200px;
+  height: 240px;
+  background-color: lightblue;
+  color: white;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+.tabs-titles {
+  height: 30px;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.tabs-titles li:hover {
+  background-color: black;
+  color: white;
+}
+
+.tabs-titles li {
+  display: inline-block;
+  border: 2px dashed black;
+}
+
+
+.tabs-content {
+  padding: 10px;
+  height: 210px;
+  border-width: 0px 2px 2px 2px;
+  border-style: dashed;
+  border-color: black;
 }

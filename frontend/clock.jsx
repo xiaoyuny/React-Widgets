@@ -1,4 +1,4 @@
-import React from 'React';
+import React from 'react';
 
 class Clock extends React.Component{
   constructor(props) {

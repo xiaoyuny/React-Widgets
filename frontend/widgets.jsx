@@ -2,13 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import Clock from './clock';
-import Clock from './tabs';
+import Tabs from './tabs';
+
+const content = ['private to-dos are here', 'work to-dos are here', 'family to-dos are here'];
 
 function Root() {
   return (
     <div>
       <Clock />
-      <Tabs />
+      <div id="tabs-and-auto">
+        <Tabs content={content} />
+      </div>
     </div>
   )
 }
